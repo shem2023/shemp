@@ -113,17 +113,17 @@ localStorage.setItem("shem", JSON.stringify(basket));
 let totalamount=()=>{
 if (basket.length!==0){
   let amount= basket.map((x)=>{
-    let{item,id}=x;
+    let{item, id} = x;
     let search = shopitemsdata.find((y) => y.id === id) || [];
     return item*search.price;
   }).reduce((x,y)=>x+y,0)
-}
+
 // console.log(amount)
-label.innerHTML=`
+label.innerHTML = `
 <h2> Total Bill : $ ${amount}</h2>
 <button class="Checkout">Checkout</button>
 <button onclick="clearcart()" class="RemoveAll">clear cart</button>
 `
-else return;
-}
+}else return;
+};
 totalamount()

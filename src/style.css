@@ -45,10 +45,18 @@ a{
     top: -15px;
     right: 0;
 }
+.search{
+    display: grid;
+    gap: 30px;
+    justify-content:left;
+   
+
+
+}
 .shop{
      display: grid;
      gap: 30px;
-     justify-content: center;
+     justify-content:center;
      grid-template-columns: repeat(4, 223px);
      margin-bottom: 50px;
 }
